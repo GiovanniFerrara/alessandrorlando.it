@@ -8,6 +8,7 @@ import $ from 'jquery'
 import Popper from 'popper.js'
 import Meta from '../Meta'
 import Navi from '../Navi'
+import './style.scss'
 class Layout extends React.Component {
   constructor(props) {
     super(props)

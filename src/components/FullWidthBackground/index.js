@@ -1,18 +1,15 @@
 import React, { Children } from 'react'
 import { Fragment } from 'react'
 import Media from 'react-media'
-
-const FullWidthImg = ({ srcDesktop, srcMobile, children }) => {
+import './style.scss'
+const FullWidthBackground = ({ srcDesktop, srcMobile, children }) => {
   return (
     <div>
       <Media query="(max-width: 599px)">
         <div
+          className="full-width-background"
           style={{
             backgroundImage: `url(${srcMobile})`,
-            backgroundSize: 'cover',
-            height: '100vh',
-            width: '100%',
-            backgroundPosition: 'center center',
           }}
         >
           {children}
@@ -20,12 +17,9 @@ const FullWidthImg = ({ srcDesktop, srcMobile, children }) => {
       </Media>
       <Media query="(min-width: 600px)">
         <div
+          className="full-width-background"
           style={{
             backgroundImage: `url(${srcDesktop})`,
-            backgroundSize: 'cover',
-            height: '100vh',
-            width: '100%',
-            backgroundPosition: 'center center',
           }}
         >
           {children}
@@ -35,4 +29,4 @@ const FullWidthImg = ({ srcDesktop, srcMobile, children }) => {
   )
 }
 
-export default FullWidthImg
+export default FullWidthBackground
