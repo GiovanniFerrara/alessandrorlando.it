@@ -38,5 +38,6 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Picture", name: "cover", widget: "image"}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
