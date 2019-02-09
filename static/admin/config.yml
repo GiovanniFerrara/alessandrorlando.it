@@ -1,32 +1,42 @@
 backend:
   name: github
   repo: GiovanniFerrara/alessandrorlando.it
-media_folder: static/img
+media_folder: static/img/upload
 public_folder: /img/upload
 
 collections:
   - name: "homepage"
-    label: "Home Page"
+    label: "Settings"
     files:
     - file: "content/pages/homepage.yaml"
       create: false
       editor: 
+        preview: false 
       name: homepage
-      label: Homepage
+      label: Home Page
       delete: false
-      preview: false 
-      slug: "{{year}}-{{month}}-{{day}}-{{}}_{{slug}}"
       fields:
-        - {label: "backgroundDesktop", name: "backgroundDesktop", widget: "image"}
-        - {label: "backgroundMobile", name: "backgroundMobile", widget: "image"}
+        - {label: "background Homepage Desktop", name: "backgroundDesktop", widget: "image"}
+        - {label: "background Homepage Mobile", name: "backgroundMobile", widget: "image"}
     - file: "content/pages/commons.yaml"
       create: false
       editor: 
+        preview: false 
       name: commons
       label: General Settings
       delete: false
-      preview: false 
       slug: "{{year}}-{{month}}-{{day}}-{{}}_{{slug}}"
       fields:
-        - {label: "backgroundDesktop", name: "backgroundDesktop", widget: "image"}
-        - {label: "backgroundMobile", name: "backgroundMobile", widget: "image"}
+        - {label: "background Desktop", name: "backgroundDesktop", widget: "image"}
+        - {label: "background Mobile", name: "backgroundMobile", widget: "image"}
+  - name: photography
+    label: Photograpy
+    folder: content/photography/
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    editor: 
+      preview: false 
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Content", name: "body", widget: "markdown"}
