@@ -57,18 +57,18 @@ module.exports = {
         background_color: '#fff',
         theme_color: '#fff',
         display: 'standalone',
-        icons: [
-          {
-            src: '/img/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/img/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
+        // icons: [
+        //   {
+        //     src: '/img/android-chrome-192x192.png',
+        //     sizes: '192x192',
+        //     type: 'image/png',
+        //   },
+        //   {
+        //     src: '/img/android-chrome-512x512.png',
+        //     sizes: '512x512',
+        //     type: 'image/png',
+        //   },
+        // ],
       },
     },
     {
@@ -89,7 +89,12 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-next',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: ['node_modules'],
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
