@@ -9,7 +9,7 @@ export default () => (
       query {
         file(relativePath: { regex: "/logo/" }) {
           childImageSharp {
-            fixed(width: 350) {
+            fixed(width: 280) {
               ...GatsbyImageSharpFixed
             }
           }

@@ -12,7 +12,7 @@ const Index = () => {
           srcMobile={homepage.backgroundMobile}
           srcDesktop={homepage.backgroundDesktop}
         >
-          <IconsHome />
+          {/* <IconsHome /> */}
         </FullWidthBackground>
       </Layout>
     </div>

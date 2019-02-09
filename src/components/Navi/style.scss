@@ -1,9 +1,14 @@
 
-@media screen and (min-width: 991px){
+@media screen and (min-width: 992px){
   #mainNav{
-    margin-top: 50px;
+    margin-top: 30px;
     // height: 70px;
+  }
+  .navbar li {
+        margin-left : 1em;
+        margin-right : 0.4em;
   }  
+
 }
 
 .navbar-bg-color{

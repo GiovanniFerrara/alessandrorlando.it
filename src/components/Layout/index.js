@@ -9,7 +9,7 @@ import $ from 'jquery'
 import Popper from 'popper.js'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
 import Meta from '../Meta'
-
+import Navi from '../Navi'
 class Layout extends React.Component {
   constructor(props) {
     super(props)
@@ -19,6 +19,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Meta site={siteMetadata} title="Alessandro Orlando" />
+        <Navi location={this.props.location} title={this.props.title} />
         {children}
       </div>
     )
