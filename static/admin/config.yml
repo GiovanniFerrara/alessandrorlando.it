@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: GiovanniFerrara/alessandrorlando.it
 media_folder: static/img
 public_folder: /img/upload
 
@@ -10,11 +11,22 @@ collections:
     - file: "content/pages/homepage.yaml"
       create: false
       editor: 
-        preview: false 
+      name: homepage
+      label: Homepage
+      delete: false
+      preview: false 
       slug: "{{year}}-{{month}}-{{day}}-{{}}_{{slug}}"
       fields:
-        - {label: "title", name: "title", widget: "string"}
-        - {label: "category", name: "category", widget: "string"}
-        - {label: "cover", name: "cover", widget: image}
-        - {label: "author", name: "author", widget: "string"}
-        - {label: "body", name: "body", widget: markdown}
+        - {label: "backgroundDesktop", name: "backgroundDesktop", widget: "image"}
+        - {label: "backgroundMobile", name: "backgroundMobile", widget: "image"}
+    - file: "content/pages/commons.yaml"
+      create: false
+      editor: 
+      name: commons
+      label: General Settings
+      delete: false
+      preview: false 
+      slug: "{{year}}-{{month}}-{{day}}-{{}}_{{slug}}"
+      fields:
+        - {label: "backgroundDesktop", name: "backgroundDesktop", widget: "image"}
+        - {label: "backgroundMobile", name: "backgroundMobile", widget: "image"}
