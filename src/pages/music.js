@@ -1,18 +1,17 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import FullWidthBackground from '../components/FullWidthBackground'
-import homepage from '../../content/pages/homepage.yaml'
-import IconsHome from '../components/IconsHome'
-
+import commons from '../../content/pages/commons.yaml'
+import Navi from '../components/Navi'
 const Index = () => {
   return (
     <div>
       <Layout>
         <FullWidthBackground
-          srcMobile={homepage.backgroundMobile}
-          srcDesktop={homepage.backgroundDesktop}
+          srcMobile={commons.backgroundMobile}
+          srcDesktop={commons.backgroundDesktop}
         >
-          <IconsHome />
+          <Navi location="/music" title="Music" />
         </FullWidthBackground>
       </Layout>
     </div>

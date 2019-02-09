@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/img/`,
+        name: 'img',
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -48,7 +55,7 @@ module.exports = {
         homepage_url: 'https://gatstrap.netlify.com',
         start_url: '/',
         background_color: '#fff',
-        theme_color: '#673ab7',
+        theme_color: '#fff',
         display: 'standalone',
         icons: [
           {

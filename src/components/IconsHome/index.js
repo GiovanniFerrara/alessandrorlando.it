@@ -6,9 +6,13 @@ import { IconContext } from 'react-icons'
 const IconsHome = () => {
   return (
     <div>
-      <IconContext.Provider value={{ color: 'white', size: '80px' }}>
+      <IconContext.Provider value={{ color: 'white', size: '50px' }}>
         <a href="">
-          <FaInstagram />
+          <FaInstagram
+            style={{
+              width: '500px',
+            }}
+          />
         </a>
         <a href="">
           <FaFacebook />

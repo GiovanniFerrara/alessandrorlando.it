@@ -1,40 +1,59 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import Logo from '../Logo'
+import './style.scss'
 class Navi extends React.Component {
   render() {
     const { location, title } = this.props
     return (
-      <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
+      <nav
+        className="navbar navbar-expand-lg navbar-bg-color fixed-top"
+        id="mainNav"
+      >
         <div className="container">
-          <Link className="text-center" to="/">
-            <h1 className="navbar-brand mb-0">{title}</h1>
+          <Link className="navbar-brand" to="/">
+            <Logo />
           </Link>
-          <div className="navbar-nav-scroll">
-            <ul className="navbar-nav bd-navbar-nav flex-row">
-              <li
-                className={
-                  location.pathname === '/' ? 'nav-item active' : 'nav-item'
-                }
-              >
-                <Link to="/" className="nav-link">
-                  Home
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="music">
+                  MUSIC
                 </Link>
               </li>
-              <li
-                className={
-                  location.pathname === '/profile/'
-                    ? 'nav-item active'
-                    : 'nav-item'
-                }
-              >
-                <Link to="/profile/" className="nav-link">
-                  Profile
+              <li className="nav-item">
+                <Link className="nav-link" to="photography">
+                  PHOTOGRAPHY
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="video">
+                  VIDEO
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="concerts-events">
+                  CONCERTS&EVENTS
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="contact">
+                  CONTACT
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
         </div>
       </nav>
     )

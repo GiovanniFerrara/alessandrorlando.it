@@ -10,7 +10,7 @@
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
-  primary: $purple,
+  primary: #333,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -37,9 +37,9 @@ $enable-print-styles: true !default;
 
 $container-max-widths: (
   sm: 540px,
-  md: 640px,
-  lg: 710px,
-  xl: 780px,
+  md: 840px,
+  lg: 900px,
+  xl: 1080px,
 ) !default;
 
 // Body
@@ -69,10 +69,10 @@ body {
   width: 100%;
 }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+// * {
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
 p {
   font-size: 16px;
