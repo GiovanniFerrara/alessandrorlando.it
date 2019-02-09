@@ -2,12 +2,11 @@ import React from 'react'
 import { FaPhone } from 'react-icons/fa'
 import { FaRegEnvelopeOpen } from 'react-icons/fa'
 import { IconContext } from 'react-icons'
-
+import './style.scss'
 const ContactForm = () => {
   return (
-    <div>
       <IconContext.Provider value={{ color: 'white', size: '50px' }}>
-        <section className="page-section" id="contact">
+        <section className="contact-page" id="contact">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
@@ -35,7 +34,6 @@ const ContactForm = () => {
           </div>
         </section>
       </IconContext.Provider>
-    </div>
   )
 }
 

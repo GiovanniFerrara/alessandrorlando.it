@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+media_folder: static/img
+public_folder: /img/upload
+
+collections:
+  - name: "homepage"
+    label: "Home Page"
+    files:
+    - file: "content/pages/homepage.yaml"
+      create: false
+      editor: 
+        preview: false 
+      slug: "{{year}}-{{month}}-{{day}}-{{}}_{{slug}}"
+      fields:
+        - {label: "title", name: "title", widget: "string"}
+        - {label: "category", name: "category", widget: "string"}
+        - {label: "cover", name: "cover", widget: image}
+        - {label: "author", name: "author", widget: "string"}
+        - {label: "body", name: "body", widget: markdown}
