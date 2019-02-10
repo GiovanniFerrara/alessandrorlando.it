@@ -16,9 +16,9 @@ const behind = {
 const infront = {
   key: photography.infront,
   src: photography.infront,
-  title: 'in-front',
-  alt: 'in-front',
-  href: 'in-front',
+  title: 'infront',
+  alt: 'infront',
+  href: 'infront',
 }
 
 const Index = () => {

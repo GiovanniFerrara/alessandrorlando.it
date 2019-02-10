@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from './Image'
 import './style.scss'
+import BackButton from '../BackButton'
 
 const Gallery = ({
   array = [
@@ -13,6 +14,7 @@ const Gallery = ({
 }) => {
   return (
     <div className="gallery__wrapper">
+      <BackButton hRef="photography" linkTo="photography" />
       {array.map(item => {
         return (
           <Image
