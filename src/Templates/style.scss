@@ -8,7 +8,12 @@
 .gallery-template > div > p {
   flex: 0 1 500px;
   padding: 10px;
-  // width: 100%;
   object-fit: cover;
-  height: 800px;
+  height: 500px;
+}
+.gallery-template > div > p >img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 2%;
 }
