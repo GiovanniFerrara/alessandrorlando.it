@@ -1,11 +1,27 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import FullWidthBackground from '../../components/FullWidthBackground'
+import photography from '../../../content/pages/photography.yaml'
 import commons from '../../../content/pages/commons.yaml'
 import { graphql } from 'gatsby'
-import Gallery from '../../components/Gallery'
+import BehindInfront from '../../components/BehindInfront'
 
-const Index = ({ data }) => {
+const behind = {
+  key: photography.behind,
+  src: photography.behind,
+  title: 'behind',
+  alt: 'behind',
+  href: 'behind',
+}
+const infront = {
+  key: photography.infront,
+  src: photography.infront,
+  title: 'in-front',
+  alt: 'in-front',
+  href: 'in-front',
+}
+
+const Index = () => {
   return (
     <div>
       <Layout>
@@ -13,7 +29,7 @@ const Index = ({ data }) => {
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}
         >
-          <Gallery array={data.allMarkdownRemark.photos} />
+          <BehindInfront array={[behind, infront]} />
         </FullWidthBackground>
       </Layout>
     </div>
@@ -21,25 +37,3 @@ const Index = ({ data }) => {
 }
 
 export default Index
-
-export const pagequery = graphql`
-  {
-    allMarkdownRemark(
-      filter: { frontmatter: { category: { regex: "/photography/" } } }
-    ) {
-      photos: edges {
-        photo: node {
-          frontmatter {
-            title
-            cover
-            category
-          }
-          fields {
-            slug
-          }
-          html
-        }
-      }
-    }
-  }
-`

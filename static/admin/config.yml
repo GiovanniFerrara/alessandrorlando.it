@@ -25,14 +25,13 @@ collections:
       name: commons
       label: General Settings
       delete: false
-      slug: "{{year}}-{{month}}-{{day}}-{{}}_{{slug}}"
       fields:
         - {label: "background Desktop", name: "backgroundDesktop", widget: "image"}
         - {label: "background Mobile", name: "backgroundMobile", widget: "image"}
   - name: photography
     label: Photograpy
     folder: content/photography/
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{slug}}"
     editor: 
       preview: false 
     create: true

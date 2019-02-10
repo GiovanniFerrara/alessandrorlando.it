@@ -2,14 +2,21 @@ import React from 'react'
 import Image from './Image'
 import './style.scss'
 
-const Gallery = ({ array }) => {
+const Gallery = ({
+  array = [
+    ({
+      photo: {
+        frontmatter: { slug = '', title = '', category = '' },
+      },
+    } = {}),
+  ],
+}) => {
   return (
     <div className="gallery__wrapper">
       {array.map(item => {
-        console.log(item.photo.frontmatter.cover)
         return (
           <Image
-            key={item}
+            key={item.photo.frontmatter.slug}
             src={item.photo.frontmatter.cover}
             title={item.photo.frontmatter.title}
             alt={item.photo.frontmatter.category}
