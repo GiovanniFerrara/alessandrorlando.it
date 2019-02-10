@@ -38,6 +38,17 @@ collections:
       fields:
         - {label: "Behind Cover Picture", name: "behind", widget: "image"}
         - {label: "In Front Cover Picture", name: "infront", widget: "image"}
+    - file: "content/pages/concertsevents.yaml"
+      create: false
+      editor: 
+        preview: false
+        remove: false 
+      name: concertsevents
+      label: Concerts & Events Page
+      delete: false
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Content", name: "body", widget: "markdown"}
   - name: photography
     label: Photograpy
     folder: content/photography/
