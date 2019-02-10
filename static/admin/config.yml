@@ -28,6 +28,16 @@ collections:
       fields:
         - {label: "background Desktop", name: "backgroundDesktop", widget: "image"}
         - {label: "background Mobile", name: "backgroundMobile", widget: "image"}
+    - file: "content/pages/photography.yaml"
+      create: false
+      editor: 
+        preview: false 
+      name: photography
+      label: Photography Page
+      delete: false
+      fields:
+        - {label: "Behind Cover Picture", name: "behind", widget: "image"}
+        - {label: "In Front Cover Picture", name: "infront", widget: "image"}
   - name: photography
     label: Photograpy
     folder: content/photography/

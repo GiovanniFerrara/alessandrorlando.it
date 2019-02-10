@@ -5,7 +5,7 @@ import './style.scss'
 const FullWidthBackground = ({ srcDesktop, srcMobile, children }) => {
   return (
     <div>
-      <Media query="(max-width: 599px)">
+      <Media query="(max-width: 900px)">
         <div
           className="full-width-background"
           style={{
@@ -15,7 +15,7 @@ const FullWidthBackground = ({ srcDesktop, srcMobile, children }) => {
           {children}
         </div>
       </Media>
-      <Media query="(min-width: 600px)">
+      <Media query="(min-width: 901px)">
         <div
           className="full-width-background"
           style={{
