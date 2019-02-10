@@ -9,7 +9,7 @@ export default () => (
       query {
         file(relativePath: { regex: "/logo/" }) {
           childImageSharp {
-            fixed(width: 280) {
+            fixed(width: 240) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -19,7 +19,10 @@ export default () => (
     render={data => (
       <div className="logo-wrapper">
         <Img
-          style={{ position: 'absolute' }}
+          style={{
+            position: 'absolute',
+            marginBottom: 0,
+          }}
           fixed={data.file.childImageSharp.fixed}
         />
       </div>

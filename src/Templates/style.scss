@@ -1,19 +1,26 @@
+.gallery-template{
+}
+
 .gallery-template>div{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 20px auto;
+  // width: 90%;
+  max-width: 1200px;
+  column-width: 540px;
+  column-gap: 30px;  
 }
 
 .gallery-template > div > p {
-  flex: 0 1 500px;
-  padding: 10px;
-  object-fit: cover;
-  height: 500px;
+	// margin: 0 2px 5px;
+	padding: 10px;
+	transition: opacity .4s ease-in-out;
+  display: inline-block;
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  page-break-inside: avoid; /* Firefox */
+  break-inside: avoid; /* IE 10+ */
 }
 .gallery-template > div > p >img {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  border-radius: 2%;
+  width: 100%; 
+  height: auto;
+	// padding-bottom: 15px;
+	// margin-bottom: 5px;
 }
