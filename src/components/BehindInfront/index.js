@@ -8,7 +8,7 @@ const BehindInfront = ({ array }) => {
       {array.map(item => {
         return (
           <ImageBehindFront
-            key={item}
+            key={item.src}
             src={item.src}
             title={item.title}
             alt={item.alt}
