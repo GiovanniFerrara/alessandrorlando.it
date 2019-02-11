@@ -38,7 +38,7 @@ collections:
       fields:
         - {label: "Behind Cover Picture", name: "behind", widget: "image"}
         - {label: "In Front Cover Picture", name: "infront", widget: "image"}
-    - file: "content/pages/concertsevents.yaml"
+    - file: "content/pages/concertsevents.md"
       create: false
       editor: 
         preview: false
