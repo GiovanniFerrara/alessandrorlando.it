@@ -23,6 +23,7 @@ export default () => (
             position: 'absolute',
             marginBottom: 0,
           }}
+          className="logo-img"
           fixed={data.file.childImageSharp.fixed}
         />
       </div>
