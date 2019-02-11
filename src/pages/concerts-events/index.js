@@ -13,6 +13,7 @@ const Index = ({ data }) => {
           srcDesktop={commons.backgroundDesktop}
         >
           <div
+            className="container"
             dangerouslySetInnerHTML={{
               __html: data.allMarkdownRemark.posts[0].post.html,
             }}

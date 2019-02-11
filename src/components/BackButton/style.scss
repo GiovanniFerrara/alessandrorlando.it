@@ -5,3 +5,12 @@
   left: 20px;
   z-index: 10;
 }
+
+@media screen and (max-width: 992px){
+  .back__button{
+    position: fixed;
+    top: 95px;
+    left: 20px;
+    z-index: 10;
+  }
+}

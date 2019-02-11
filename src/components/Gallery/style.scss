@@ -35,3 +35,17 @@
 .gallery_img_wrapper:hover > a > .gallery_img  {
   height: 300px;
 }
+
+@media screen and (max-width: 992px){
+  .gallery__wrapper{
+
+  }
+  .gallery_img_wrapper{
+    height: 300px;
+    margin-top: 30px;
+
+  }
+  .gallery_img{
+    height: 300px;
+  }
+}

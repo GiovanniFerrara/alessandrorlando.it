@@ -13,3 +13,9 @@
   object-fit: cover;
   height: 400px;
 }
+
+@media screen and (max-width: 992px){
+  .behind-front__img{
+    height: 300px;
+  }
+}

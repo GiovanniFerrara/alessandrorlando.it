@@ -1,40 +1,21 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
 import React from 'react'
+import PropTypes from 'prop-types'
+import { IconContext } from 'react-icons'
 
-import {
-  faApple,
-  faAws,
-  faFacebook,
-  faGithub,
-  faHtml5,
-  faJs,
-  faNode,
-  faPhp,
-  faReact,
-  faTwitter,
-  faVuejs,
-} from '@fortawesome/free-brands-svg-icons'
-import './style.scss'
-
-library.add(
-  faApple,
-  faAws,
-  faFacebook,
-  faGithub,
-  faHtml5,
-  faJs,
-  faNode,
-  faPhp,
-  faReact,
-  faTwitter,
-  faVuejs
-)
-
-const Icon = ({ name }) => (
-  <div className="icon" title={name}>
-    <FontAwesomeIcon icon={['fab', name]} />
-  </div>
-)
+const Icon = props => {
+  return (
+    <div>
+      <IconContext.Provider value={{ color: props.color, size: props.size }}>
+        <a href={props.link}>{props.children}</a>
+      </IconContext.Provider>
+    </div>
+  )
+}
 
 export default Icon
+
+Icon.propTypes = {
+  color: PropTypes.string,
+  size: PropTypes.string,
+  children: PropTypes.object,
+}
