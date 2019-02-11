@@ -2,9 +2,9 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import FullWidthBackground from '../../components/FullWidthBackground'
 import commons from '../../../content/pages/commons.yaml'
-import content from '../../../content/pages/concertsevents.yaml'
-
-const Index = () => {
+import { graphql } from 'gatsby'
+const Index = ({ data }) => {
+  console.log(data)
   return (
     <div>
       <Layout>
@@ -12,7 +12,11 @@ const Index = () => {
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}
         >
-          <div dangerouslySetInnerHTML={{ __html: content.body }} />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.allMarkdownRemark.posts[0].post.html,
+            }}
+          />
         </FullWidthBackground>
       </Layout>
     </div>
@@ -20,3 +24,20 @@ const Index = () => {
 }
 
 export default Index
+
+export const pagequery = graphql`
+  {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/concertsevents/" } }
+    ) {
+      posts: edges {
+        post: node {
+          frontmatter {
+            title
+          }
+          html
+        }
+      }
+    }
+  }
+`
