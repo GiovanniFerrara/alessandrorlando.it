@@ -22,3 +22,34 @@ font-weight: 500
   padding-top: 4px;
   padding-bottom: 4px;
 }
+.navbar-toggler{
+  background-color: #bbb;
+  border-color: #888;
+  position: relative;
+  // outline: none;
+}
+// .navbar-toggler-icon:before{
+//   // background: #333;
+//   content: url("/img/menu.png");
+//   width: 10px!important;
+//   height: 10px!important;
+//   display: block;
+// }
+
+.navbar-line{
+  height:2px;
+  width: 35px;
+  background-color: #666; 
+  border-radius: 2px;
+  position: absolute;
+  left: 10px;
+}
+.nl1{
+  top:10px;
+}
+.nl2{
+  top:18px;
+}
+.nl3{
+  top:26px;
+}

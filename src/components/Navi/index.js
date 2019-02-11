@@ -24,6 +24,9 @@ class Navi extends React.Component {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon" />
+            <span className="navbar-line nl1" />
+            <span className="navbar-line nl2" />
+            <span className="navbar-line nl3" />
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">

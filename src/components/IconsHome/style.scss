@@ -9,9 +9,7 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.icons-wrapper > div ,a{
 
-}
 .icons-wrapper > div > a> svg:hover{
   opacity: 1;
 }
@@ -22,8 +20,7 @@
     justify-content: flex-end;
     flex-direction: column;
     align-items: flex-end;
-    // padding-right: 15px;
-    // border: 2px solid red;
+    padding-right: 0px;
   } 
   .icons-wrapper > div > a> svg{
     opacity: 1;
