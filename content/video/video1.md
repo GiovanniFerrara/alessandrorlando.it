@@ -1,7 +1,7 @@
 ---
 title: titolo
+link: 'https://player.vimeo.com/video/248344949'
 category: clip
-link: https://www.youtube.com/embed/7U63UJ2z8iA
 ---
 
 descrizione del video
