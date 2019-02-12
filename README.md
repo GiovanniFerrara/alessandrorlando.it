@@ -1,5 +1,6 @@
 # Alessandro Orlando
 Website developed with Gatsby.js - React - Netlify CMS
+Work in progress at the link: http://alessandrorlando.netlify.com
 
 ## Features
 <img src="https://res.cloudinary.com/dwthxwmwg/image/upload/v1549967530/Cattura.jpg" title="homapage">
