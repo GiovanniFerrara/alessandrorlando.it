@@ -7,9 +7,9 @@ const SingleVideo = ({ video }) => {
       <iframe
         className="embed-responsive-item"
         src={video.link}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen="true"
       />
     </div>
   )

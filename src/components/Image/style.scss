@@ -2,8 +2,9 @@
   flex: 0 1 500px;
   padding: 10px;
   position: relative;
-  height: 400px;
+  height: 460px;
   margin-bottom: 20px;
+  // max-width: 50%
 }
 
 .gallery_link__wrapper figcaption{
@@ -19,21 +20,18 @@
 .gallery_img{
   width: 100%;
   object-fit: cover;
-  height: 400px;
+  height: 460px;
   -webkit-box-shadow: 6px 10px 52px -2px rgba(0,0,0,1);
   -moz-box-shadow: 6px 10px 52px -2px rgba(0,0,0,1);
   box-shadow: 6px 10px 52px -2px rgba(0,0,0,1);
-  transition: 1s ease;
+  transition: 0.6s ease;
 }
 
 .gallery_img_wrapper:hover > a > .gallery_img  {
-  height: 300px;
+  height: 390px;
 }
 
 @media screen and (max-width: 992px){
-  .gallery__wrapper{
-
-  }
   .gallery_img_wrapper{
     height: 300px;
     margin-top: 30px;
