@@ -1,5 +1,4 @@
 import React from 'react'
-// import Navi from '../Navi'
 // import { siteMetadata } from '../../../gatsby-config'
 import 'modern-normalize/modern-normalize.css'
 import '../../scss/gatstrap.scss'
