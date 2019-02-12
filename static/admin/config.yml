@@ -6,7 +6,7 @@ public_folder: /img/upload
 
 collections:
   - name: "homepage"
-    label: "Settings"
+    label: "Pages"
     files:
     - file: "content/pages/homepage.yaml"
       create: false
@@ -28,6 +28,20 @@ collections:
       fields:
         - {label: "background Desktop", name: "backgroundDesktop", widget: "image"}
         - {label: "background Mobile", name: "backgroundMobile", widget: "image"}
+    - file: "content/pages/video.yaml"
+      editor: 
+        preview: false 
+      delete: false
+      name: video
+      label: Video Page
+      fields:
+        - {label: "Clip Category label", name: "titleClip", widget: "string"}
+        - {label: "Clip Cover photo", name: "coverClip", widget: "image"}
+        - {label: "Stage Category label", name: "titleStage", widget: "string"}
+        - {label: "Stage Cover photo", name: "coverStage", widget: "image"}
+        - {label: "Home Videos Category label", name: "titleHome", widget: "string"}
+        - {label: "Stage Cover photo", name: "coverHome", widget: "image"}
+
     - file: "content/pages/photography.yaml"
       create: false
       editor: 
@@ -50,7 +64,7 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Content", name: "body", widget: "markdown"}
   - name: photography
-    label: Photograpy
+    label: Album
     folder: content/photography/
     slug: "{{slug}}"
     editor: 
@@ -59,5 +73,17 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Cover Picture", name: "cover", widget: "image"}
-      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Category lowercase or minuscolo, one of (infront - behind)", name: "category", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
+  - name: video
+    label: Videos
+    folder: content/video/
+    slug: "{{slug}}"
+    editor: 
+      preview: false 
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Link for embedded videos", name: "link", widget: "string"}
+      - {label: "Category lowercase or minuscolo, one of (home - stage - clip)", name: "category", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}
