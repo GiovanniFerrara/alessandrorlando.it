@@ -12,8 +12,11 @@ Work in progress at the link: http://alessandrorlando.netlify.com
 
 ## Installation
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatstrap https://github.com/jaxx2104/gatsby-starter-bootstrap`
+`
+git clone https://github.com/GiovanniFerrara/alessandrorlando.it/
+cd alessandrorlando.it
+yarn
+`
 
 ## Usage
 
