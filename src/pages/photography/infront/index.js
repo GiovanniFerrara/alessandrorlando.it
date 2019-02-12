@@ -1,21 +1,13 @@
 import React from 'react'
-import Layout from '../../../components/Layout'
-import FullWidthBackground from '../../../components/FullWidthBackground'
-import commons from '../../../../content/pages/commons.yaml'
 import { graphql } from 'gatsby'
-import Gallery from '../../../components/Gallery'
+import PhotographySub from '../../../components/PhotographySub'
+
+const Component = PhotographySub()
 
 const Index = ({ data }) => {
   return (
     <div>
-      <Layout>
-        <FullWidthBackground
-          srcMobile={commons.backgroundMobile}
-          srcDesktop={commons.backgroundDesktop}
-        >
-          <Gallery array={data.allMarkdownRemark.photos} />
-        </FullWidthBackground>
-      </Layout>
+      <Component data={data} />
     </div>
   )
 }
@@ -27,8 +19,8 @@ export const pagequery = graphql`
     allMarkdownRemark(
       filter: { frontmatter: { category: { regex: "/infront/" } } }
     ) {
-      photos: edges {
-        photo: node {
+      edges {
+        node {
           frontmatter {
             title
             cover

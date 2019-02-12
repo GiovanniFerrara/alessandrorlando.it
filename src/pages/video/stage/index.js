@@ -1,9 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import PhotographySub from '../../../components/PhotographySub'
+import VideoSub from '../../../components/VideoSub'
 
-const Component = PhotographySub()
-
+const Component = VideoSub()
 const Index = ({ data }) => {
   return (
     <div>
@@ -11,22 +10,20 @@ const Index = ({ data }) => {
     </div>
   )
 }
+
 export default Index
 
 export const pagequery = graphql`
   {
     allMarkdownRemark(
-      filter: { frontmatter: { category: { regex: "/behind/" } } }
+      filter: { frontmatter: { category: { regex: "/stage/" } } }
     ) {
       edges {
         node {
           frontmatter {
             title
-            cover
+            link
             category
-          }
-          fields {
-            slug
           }
           html
         }

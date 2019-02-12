@@ -3,7 +3,46 @@ import Layout from '../../components/Layout'
 import FullWidthBackground from '../../components/FullWidthBackground'
 import EmbeddedVideo from '../../components/EmbeddedVideo'
 import commons from '../../../content/pages/commons.yaml'
-const Index = () => {
+import video from '../../../content/pages/video.yaml'
+import { graphql } from 'gatsby'
+import Gallery from '../../components/Gallery'
+
+const Index = ({ data }) => {
+  const dataArray = [
+    {
+      node: {
+        frontmatter: {
+          cover: video.coverClip,
+          title: video.titleClip,
+        },
+        fields: {
+          slug: 'clip',
+        },
+      },
+    },
+    {
+      node: {
+        frontmatter: {
+          cover: video.coverStage,
+          title: video.titleStage,
+        },
+        fields: {
+          slug: 'stage',
+        },
+      },
+    },
+    {
+      node: {
+        frontmatter: {
+          cover: video.coverHome,
+          title: video.titleHome,
+        },
+        fields: {
+          slug: 'home',
+        },
+      },
+    },
+  ]
   return (
     <div>
       <Layout>
@@ -11,7 +50,7 @@ const Index = () => {
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}
         >
-          <EmbeddedVideo link="https://www.youtube.com/embed/7U63UJ2z8iA" />
+          <Gallery array={dataArray} page={'video/'} />
         </FullWidthBackground>
       </Layout>
     </div>
@@ -19,3 +58,23 @@ const Index = () => {
 }
 
 export default Index
+
+export const pagequery = graphql`
+  {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/video/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            category
+            link
+          }
+          html
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`

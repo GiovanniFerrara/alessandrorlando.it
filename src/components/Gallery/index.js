@@ -1,28 +1,27 @@
 import React from 'react'
-import Image from './Image'
+import Image from '../Image'
 import './style.scss'
-import BackButton from '../BackButton'
 
 const Gallery = ({
   array = [
     ({
-      photo: {
+      node: {
         frontmatter: { slug = '', title = '', category = '' },
       },
     } = {}),
   ],
+  page = '',
 }) => {
   return (
     <div className="gallery__wrapper">
-      <BackButton hRef="photography" linkTo="photography" />
       {array.map(item => {
         return (
           <Image
-            key={item.photo.frontmatter.slug}
-            src={item.photo.frontmatter.cover}
-            title={item.photo.frontmatter.title}
-            alt={item.photo.frontmatter.category}
-            href={item.photo.fields.slug}
+            key={item.node.frontmatter.cover}
+            src={item.node.frontmatter.cover}
+            title={item.node.frontmatter.title}
+            alt={item.node.frontmatter.category}
+            href={page + item.node.fields.slug}
           />
         )
       })}
