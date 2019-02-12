@@ -1,17 +1,29 @@
 .logo-wrapper> .gatsby-image-wrapper{
-  top: -5px;
+  top: -8px;
 }  
 .logo-wrapper img{
   margin-bottom: 0;
 }  
 
-.logo-img > picture > img{
-  // width: 30px!important;
-  // width: 100%;
-  height: 66px!important;
-  width: 162px!important;
-}
-.logo-img{
-  height: 66px!important;
-  width: 162px!important;
+
+
+@media screen and (max-width: 992px){
+  .logo-wrapper> .gatsby-image-wrapper{
+    top: 0px;
+  }  
+  .logo-wrapper img{
+    margin-bottom: 0;
+  }  
+  
+  .logo-img > picture > img{
+    // width: 30px!important;
+    // width: 100%;
+    height: 66px!important;
+    width: 162px!important;
+  }
+  .logo-img{
+    height: 66px!important;
+    width: 162px!important;
+  }
+  
 }
