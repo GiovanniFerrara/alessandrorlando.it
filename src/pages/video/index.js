@@ -45,7 +45,7 @@ const Index = ({ data }) => {
   ]
   return (
     <div>
-      <Layout>
+      <Layout page="video">
         <FullWidthBackground
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}

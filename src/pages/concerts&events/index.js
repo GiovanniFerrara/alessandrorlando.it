@@ -7,7 +7,7 @@ const Index = ({ data }) => {
   console.log(data)
   return (
     <div>
-      <Layout>
+      <Layout page="concerts">
         <FullWidthBackground
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}

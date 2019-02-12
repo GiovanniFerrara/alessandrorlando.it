@@ -24,7 +24,7 @@ const infront = {
 const Index = () => {
   return (
     <div>
-      <Layout>
+      <Layout page="photography">
         <FullWidthBackground
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}

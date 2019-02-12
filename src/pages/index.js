@@ -7,7 +7,7 @@ import IconsHome from '../components/IconsHome'
 const Index = () => {
   return (
     <div>
-      <Layout>
+      <Layout page="/">
         <FullWidthBackground
           srcMobile={homepage.backgroundMobile}
           srcDesktop={homepage.backgroundDesktop}

@@ -5,7 +5,7 @@ import commons from '../../../content/pages/commons.yaml'
 const Index = () => {
   return (
     <div>
-      <Layout>
+      <Layout page="music">
         <FullWidthBackground
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}

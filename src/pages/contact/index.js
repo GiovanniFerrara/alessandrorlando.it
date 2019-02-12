@@ -7,7 +7,7 @@ import ContactForm from '../../components/ContactForm'
 const Index = () => {
   return (
     <div>
-      <Layout>
+      <Layout page="contact">
         <FullWidthBackground
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}

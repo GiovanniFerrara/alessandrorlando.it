@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Logo from '../Logo'
+import Item from './Item'
 import './style.scss'
+
 class Navi extends React.Component {
   render() {
     const { location, title } = this.props
@@ -30,7 +32,13 @@ class Navi extends React.Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              <Item location={location} pageName="music" />
+              <Item location={location} pageName="photography" />
+              <Item location={location} pageName="video" />
+              <Item location={location} pageName="concerts&events" />
+              <Item location={location} pageName="contact" />
+
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="music">
                   MUSIC
                 </Link>
@@ -54,7 +62,7 @@ class Navi extends React.Component {
                 <Link className="nav-link" to="contact">
                   CONTACT
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

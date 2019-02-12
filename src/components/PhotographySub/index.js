@@ -9,7 +9,7 @@ const PhotographySub = () => {
   return ({ data }) => {
     return (
       <div>
-        <Layout>
+        <Layout page="photography">
           <FullWidthBackground
             srcMobile={commons.backgroundMobile}
             srcDesktop={commons.backgroundDesktop}

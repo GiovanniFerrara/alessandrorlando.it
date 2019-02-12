@@ -1,14 +1,15 @@
 import React from 'react'
 import './style.scss'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import FullWidthBackground from '../components/FullWidthBackground'
-import commons from '../../content/pages/commons.yaml'
-import BackButton from '../components/BackButton'
+import Layout from '../../components/Layout'
+import FullWidthBackground from '../../components/FullWidthBackground'
+import commons from '../../../content/pages/commons.yaml'
+import BackButton from '../../components/BackButton'
+
 const GalleryTemplate = props => {
   console.log(props)
   return (
-    <Layout>
+    <Layout page={props.data.markdownRemark.fields.location}>
       <FullWidthBackground
         srcMobile={commons.backgroundMobile}
         srcDesktop={commons.backgroundDesktop}
@@ -37,6 +38,9 @@ export const queryGallery = graphql`
       frontmatter {
         title
         category
+      }
+      fields {
+        location
       }
     }
   }

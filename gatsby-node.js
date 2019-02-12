@@ -10,12 +10,22 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
+    if (
+      node.frontmatter.category == 'infront' ||
+      node.frontmatter.category == 'behind'
+    ) {
+      createNodeField({
+        node,
+        name: `location`,
+        value: 'photography',
+      })
+    }
   }
 }
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const GalleryTemplate = path.resolve(`src/Templates/index.js`)
+  const GalleryTemplate = path.resolve(`src/Templates/GalleryTemplate/index.js`)
   // Query for markdown nodes to use in creating pages.
   // You can query for whatever data you want to create pages for e.g.
   // products, portfolio items, landing pages, etc.

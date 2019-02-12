@@ -28,13 +28,17 @@ font-weight: 500
   position: relative;
   // outline: none;
 }
-// .navbar-toggler-icon:before{
-//   // background: #333;
-//   content: url("/img/menu.png");
-//   width: 10px!important;
-//   height: 10px!important;
-//   display: block;
-// }
+.nav-link{
+  text-transform: uppercase;
+}
+
+.navbar .active{
+  background: #fff;
+  border-radius: 8px;
+}
+.navbar .nav-item:hover{
+  background: #ccc;
+}
 
 .navbar-line{
   height:2px;

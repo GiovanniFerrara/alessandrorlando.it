@@ -16,11 +16,11 @@ class Layout extends React.Component {
     const bootstrap = require('bootstrap/dist/js/bootstrap.bundle.min.js')
   }
   render() {
-    const { children } = this.props
+    const { children, page } = this.props
     return (
       <div>
         {/* <Meta site={siteMetadata} title="Alessandro Orlando" /> */}
-        <Navi location={this.props.location} title={this.props.title} />
+        <Navi location={page} title={this.props.title} />
         {children}
       </div>
     )
