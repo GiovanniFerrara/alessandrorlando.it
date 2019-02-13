@@ -4,7 +4,7 @@ import SingleSong from '../SingleSong'
 
 const SongList = ({ songs, songSelect, handleSongClick }) => {
   return (
-    <div>
+    <Fragment>
       <ul className="song-list__wrapper">
         {songs.map((song, i) => (
           <SingleSong
@@ -16,7 +16,7 @@ const SongList = ({ songs, songSelect, handleSongClick }) => {
           />
         ))}
       </ul>
-    </div>
+    </Fragment>
   )
 }
 

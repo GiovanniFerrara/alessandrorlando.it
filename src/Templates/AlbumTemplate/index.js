@@ -6,6 +6,7 @@ import FullWidthBackground from '../../components/FullWidthBackground'
 import commons from '../../../content/pages/commons.yaml'
 import BackButton from '../../components/BackButton'
 import SongList from './SongList'
+import Lyrics from './Lyrics'
 
 class AlbumTemplate extends Component {
   constructor(props) {
@@ -35,11 +36,23 @@ class AlbumTemplate extends Component {
           srcDesktop={commons.backgroundDesktop}
         >
           <BackButton linkTo={'Music'} hRef={`music/`} />
-          <div className="gallery-template container row">
+          <div className="album-template container">
             <SongList
               songs={props.data.markdownRemark.frontmatter.songs}
               songSelect={this.state.songSelect}
               handleSongClick={this.handleSongClick}
+            />
+            <Lyrics
+              song={
+                props.data.markdownRemark.frontmatter.songs[
+                  this.state.songSelect
+                ]
+              }
+              songSelect={
+                props.data.markdownRemark.frontmatter.songs[
+                  this.state.songSelect
+                ]
+              }
             />
           </div>
         </FullWidthBackground>

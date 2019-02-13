@@ -1,0 +1,14 @@
+.lyrics__wrapper{
+  display: flex;
+  flex: 1 0 20%;
+  // flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 0px 20px;
+  flex-direction: column;
+  border: 0.7px solid #aaa;
+}
+.lyrics__wrapper .single-song{
+  font-weight: 700;
+  font-size: 17px;
+}
