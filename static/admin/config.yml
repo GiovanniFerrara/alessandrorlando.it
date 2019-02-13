@@ -109,3 +109,4 @@ collections:
           - {label: "title", name: "title", widget: "string"}
           - {label: "link", name: "link", widget: "string"}
           - {label: "text", name: "text", widget: "markdown"}
+          - {label: "image", name: "image", widget: "image", required: false}

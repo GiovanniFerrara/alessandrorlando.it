@@ -7,6 +7,7 @@ import commons from '../../../content/pages/commons.yaml'
 import BackButton from '../../components/BackButton'
 import SongList from './SongList'
 import Lyrics from './Lyrics'
+import AlbumInfo from './AlbumInfo'
 
 class AlbumTemplate extends Component {
   constructor(props) {
@@ -42,6 +43,20 @@ class AlbumTemplate extends Component {
               songSelect={this.state.songSelect}
               handleSongClick={this.handleSongClick}
             />
+            <AlbumInfo
+              link={
+                props.data.markdownRemark.frontmatter.songs[
+                  this.state.songSelect
+                ].link
+              }
+              cover={props.data.markdownRemark.frontmatter.cover}
+              title={props.data.markdownRemark.frontmatter.title}
+              image={
+                props.data.markdownRemark.frontmatter.songs[
+                  this.state.songSelect
+                ].image
+              }
+            />
             <Lyrics
               song={
                 props.data.markdownRemark.frontmatter.songs[
@@ -73,10 +88,12 @@ export const queryGallery = graphql`
           title
           text
           link
+          image
         }
       }
       fields {
         slug
+        location
       }
     }
   }
