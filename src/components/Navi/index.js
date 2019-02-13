@@ -37,32 +37,6 @@ class Navi extends React.Component {
               <Item location={location} pageName="video" />
               <Item location={location} pageName="concerts&events" />
               <Item location={location} pageName="contact" />
-
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="music">
-                  MUSIC
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="photography">
-                  PHOTOGRAPHY
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="video">
-                  VIDEO
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="concerts-events">
-                  CONCERTS&EVENTS
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="contact">
-                  CONTACT
-                </Link>
-              </li> */}
             </ul>
           </div>
         </div>

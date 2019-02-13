@@ -15,7 +15,7 @@ const PhotographySub = () => {
             srcDesktop={commons.backgroundDesktop}
           >
             <BackButton hRef={'photography'} linkTo={'Photography'} />
-            <Gallery array={data.allMarkdownRemark.edges} page="photography" />
+            <Gallery array={data.allMarkdownRemark.edges} page="" />
           </FullWidthBackground>
         </Layout>
       </div>

@@ -9,7 +9,7 @@ const SingleVideo = ({ video }) => {
         src={video.link}
         frameBorder="0"
         allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen="true"
+        allowFullScreen={true}
       />
     </div>
   )

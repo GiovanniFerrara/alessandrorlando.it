@@ -2,6 +2,7 @@
 title: India
 cover: /img/upload/home.jpg
 category: infront
+layout: photography
 ---
 
 ![img2](/img/upload/home.jpg 'img2')

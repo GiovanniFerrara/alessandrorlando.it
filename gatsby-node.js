@@ -1,43 +1,44 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const {
+  createLocationField,
+  filterEdgesByLayout,
+} = require('./utils/functions')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `photography` })
+    const slug = createFilePath({ node, getNode, basePath: `` })
     createNodeField({
       node,
       name: `slug`,
       value: slug,
     })
-    if (
-      node.frontmatter.category == 'infront' ||
-      node.frontmatter.category == 'behind'
-    ) {
-      createNodeField({
-        node,
-        name: `location`,
-        value: 'photography',
-      })
-    }
+    // Create a location field from frontmatter.layout
+    createLocationField('photography', node, createNodeField)
+    createLocationField('music', node, createNodeField)
+    createLocationField('video', node, createNodeField)
   }
 }
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const GalleryTemplate = path.resolve(`src/Templates/GalleryTemplate/index.js`)
+  const AlbumTemplate = path.resolve(`src/Templates/AlbumTemplate/index.js`)
+
   // Query for markdown nodes to use in creating pages.
   // You can query for whatever data you want to create pages for e.g.
   // products, portfolio items, landing pages, etc.
   return graphql(`
     {
-      allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/photography/" } }
-      ) {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//" } }) {
         edges {
           node {
             fields {
               slug
+            }
+            frontmatter {
+              layout
             }
           }
         }
@@ -47,22 +48,27 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
-    // Create blog post pages.
-    result.data.allMarkdownRemark.edges.forEach(edge => {
+    const photographyEdges = filterEdgesByLayout('photography', result)
+    const musicEdges = filterEdgesByLayout('music', result)
+    // Create photography pages.
+    photographyEdges.forEach(edge => {
       createPage({
         // Path for this page — required
-        path: `photography${edge.node.fields.slug}`,
+        path: `${edge.node.fields.slug}`,
         component: GalleryTemplate,
         context: {
           slug: edge.node.fields.slug,
-          // Add optional context data to be inserted
-          // as props into the page component..
-          //
-          // The context data can also be used as
-          // arguments to the page GraphQL query.
-          //
-          // The page "path" is always available as a GraphQL
-          // argument.
+        },
+      })
+    })
+
+    musicEdges.forEach(edge => {
+      createPage({
+        // Path for this page — required
+        path: `${edge.node.fields.slug}`,
+        component: AlbumTemplate,
+        context: {
+          slug: edge.node.fields.slug,
         },
       })
     })
