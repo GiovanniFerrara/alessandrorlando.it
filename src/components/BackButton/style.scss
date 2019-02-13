@@ -1,7 +1,7 @@
 .back__button{
   position: fixed;
   cursor: pointer;
-  top: 130px;
+  top: 110px;
   left: 20px;
   z-index: 10;
 }
@@ -9,7 +9,7 @@
 @media screen and (max-width: 992px){
   .back__button{
     position: fixed;
-    top: 95px;
+    top: 85px;
     left: 20px;
     z-index: 10;
   }

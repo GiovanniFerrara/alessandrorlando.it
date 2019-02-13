@@ -1,4 +1,7 @@
 .album-template{
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
