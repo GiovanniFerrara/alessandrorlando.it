@@ -4,7 +4,6 @@ import FullWidthBackground from '../../components/FullWidthBackground'
 import commons from '../../../content/pages/commons.yaml'
 import { graphql } from 'gatsby'
 const Index = ({ data }) => {
-  console.log(data)
   return (
     <div>
       <Layout page="concerts&events">

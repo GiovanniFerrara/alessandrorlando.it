@@ -3,7 +3,6 @@ import { Fragment } from 'react'
 import Media from 'react-media'
 import './style.scss'
 const FullWidthBackground = ({ srcDesktop, srcMobile, children, classDom }) => {
-  console.log(classDom)
   return (
     <div>
       <Media query="(max-width: 900px)">

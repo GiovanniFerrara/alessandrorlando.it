@@ -1,0 +1,16 @@
+.song-list__wrapper{
+  display: flex;
+  flex: 1 0 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 20px;
+  flex-direction: column;
+  list-style: none;
+  border: 0.7px solid #aaa;
+}
+
+.active{
+  font-weight: 700;
+  transform: scale(1.07);
+}
