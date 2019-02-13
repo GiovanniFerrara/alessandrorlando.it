@@ -1,4 +1,13 @@
-
+@media screen and (max-width: 992px){
+  .navbar li {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }  
+  .navbar .active{
+    max-width: 200px;
+  }
+}
 @media screen and (min-width: 992px){
   #mainNav{
     margin-top: 30px;
@@ -10,6 +19,9 @@
   }  
 }
 
+#mainNav button:focus{
+  outline-color: rgba($color: #333, $alpha: 0)
+}
 .navbar li a{
 color: #333;
 font-weight: 500
@@ -23,9 +35,10 @@ font-weight: 500
   padding-bottom: 4px;
 }
 .navbar-toggler{
-  background-color: #bbb;
-  border-color: #888;
+  background-color: #cbcbcb;
+  // border-color: #888;
   position: relative;
+  border-radius: 14px;
   // outline: none;
 }
 .nav-link{
@@ -33,17 +46,18 @@ font-weight: 500
 }
 
 .navbar .active{
-  background: #fff;
-  border-radius: 8px;
+  background: #ccc;
+  border-radius: 15px;
 }
 .navbar .nav-item:hover{
-  background: #ccc;
+  background: #bbb;
+  border-radius: 15px;
 }
 
 .navbar-line{
   height:2px;
   width: 35px;
-  background-color: #666; 
+  background-color: #999; 
   border-radius: 2px;
   position: absolute;
   left: 10px;

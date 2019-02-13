@@ -13,7 +13,7 @@ const IconsHome = () => {
         <Icon
           color="#c1558b"
           link="https://www.instagram.com/ilsognodiprometeo/"
-          size="55px"
+          size="58px"
         >
           <FaInstagram />
         </Icon>

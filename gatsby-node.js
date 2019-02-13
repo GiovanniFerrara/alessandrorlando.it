@@ -50,10 +50,9 @@ exports.createPages = ({ graphql, actions }) => {
     }
     const photographyEdges = filterEdgesByLayout('photography', result)
     const musicEdges = filterEdgesByLayout('music', result)
-    // Create photography pages.
+    // Create the pages for each  photographic album added
     photographyEdges.forEach(edge => {
       createPage({
-        // Path for this page — required
         path: `${edge.node.fields.slug}`,
         component: GalleryTemplate,
         context: {
@@ -61,10 +60,9 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-
+    // Create the pages for each  music album added
     musicEdges.forEach(edge => {
       createPage({
-        // Path for this page — required
         path: `${edge.node.fields.slug}`,
         component: AlbumTemplate,
         context: {
