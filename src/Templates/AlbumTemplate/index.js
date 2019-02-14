@@ -42,6 +42,7 @@ class AlbumTemplate extends Component {
               songs={props.data.markdownRemark.frontmatter.songs}
               songSelect={this.state.songSelect}
               handleSongClick={this.handleSongClick}
+              title={props.data.markdownRemark.frontmatter.title}
             />
             <AlbumInfo
               link={

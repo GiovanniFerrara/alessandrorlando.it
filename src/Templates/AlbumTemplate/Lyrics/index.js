@@ -6,11 +6,9 @@ import LyricBody from './LyricBody'
 const SongList = ({ song, songSelect }) => {
   return (
     <div className="lyrics__wrapper">
-      <SingleSong
-        title={song.title}
-        songSelect={songSelect}
-        handleSongClick={() => {}}
-      />
+      <div className="lyrics__title">
+        <h5> {song.title} </h5>
+      </div>
       <LyricBody text={song.text} />
     </div>
   )

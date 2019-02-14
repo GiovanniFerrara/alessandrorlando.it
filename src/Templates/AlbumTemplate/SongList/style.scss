@@ -10,7 +10,19 @@
   border: 0.7px solid #aaa;
   margin-bottom: 0;
 }
-
+.song-list__title{
+  display: flex;
+  flex: 0 1 90px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-bottom: 0.7px solid #aaa;
+  // height: 80px;
+}
+.song-list__title h2{
+  margin: auto;
+  // flex: 0 1 50px
+}
 .active{
   font-weight: 700;
   transform: scale(1.07);
