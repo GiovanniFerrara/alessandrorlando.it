@@ -11,6 +11,7 @@ const Index = () => {
         <FullWidthBackground
           srcMobile={homepage.backgroundMobile}
           srcDesktop={homepage.backgroundDesktop}
+          classHomepage="full-width-background__home"
         >
           <IconsHome />
         </FullWidthBackground>

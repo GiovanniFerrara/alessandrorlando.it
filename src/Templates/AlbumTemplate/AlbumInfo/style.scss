@@ -6,3 +6,21 @@
   align-items: center;
   border: 0.7px solid #aaa;
 }
+
+.album-info__img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center center;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px){
+  .album-info__img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 0;
+  }
+}

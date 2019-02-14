@@ -20,6 +20,17 @@
 
 @media screen and (max-width: 992px){
   .full-width-background{
-    padding-top: 120px;
+    padding-top: 80px;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-attachment: scroll;
   }
+}
+
+.full-width-background__home{
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center center;
 }
