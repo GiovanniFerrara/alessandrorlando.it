@@ -19,9 +19,10 @@ const ContactForm = () => {
           <div className="col-md-9 mb-md-0 mb-5">
             <form
               name="contact"
-              method="post"
+              method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              action="/contact"
             >
               <div className="row">
                 <div className="col-md-6">
