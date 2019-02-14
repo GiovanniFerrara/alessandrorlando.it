@@ -1,4 +1,4 @@
-// import { InlineSelectControl, InlineSelectPreview } from 'netlify-cms-widget-inline-select';
-import CMS, { init } from 'netlify-cms'
+// import CMS from 'netlify-cms'
+// import AlbumTemplatePreview from "./templatePreview/AlbumTemplatePreview";
 
-// CMS.registerWidget('inline-select', InlineSelectControl, InlineSelectPreview);
+// CMS.registerPreviewTemplate("music", AlbumTemplatePreview);

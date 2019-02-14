@@ -5,9 +5,9 @@ import Layout from '../../components/Layout'
 import FullWidthBackground from '../../components/FullWidthBackground'
 import commons from '../../../content/pages/commons.yaml'
 import BackButton from '../../components/BackButton'
-import SongList from './SongList'
-import Lyrics from './Lyrics'
-import AlbumInfo from './AlbumInfo'
+import SongList from '../../components/SongList'
+import Lyrics from '../../components/Lyrics'
+import AlbumInfo from '../../components/AlbumInfo'
 
 class AlbumTemplate extends Component {
   constructor(props) {

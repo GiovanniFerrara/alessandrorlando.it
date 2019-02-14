@@ -1,20 +1,16 @@
 @media screen and (max-width: 992px){
   .navbar li {
-    // padding-left: 20px;
     padding-top: 7px;
     padding-bottom: 7px;
     text-align: center;
   }  
   .navbar .active{
-    // max-width: 300px;
     margin: 0 62px;
-    // padding-left: 30px;
   }
 }
 @media screen and (min-width: 992px){
   #mainNav{
     margin-top: 30px;
-    // height: 70px;
   }
   .navbar li {
         margin-left : 1em;
@@ -39,10 +35,8 @@ font-weight: 500
 }
 .navbar-toggler{
   background-color: #cbcbcb;
-  // border-color: #888;
   position: relative;
   border-radius: 14px;
-  // outline: none;
 }
 .nav-link{
   text-transform: uppercase;
