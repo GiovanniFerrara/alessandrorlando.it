@@ -22,8 +22,10 @@ const ContactForm = () => {
               method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              action="/contact"
+              action="/contact/"
             >
+              <input type="hidden" name="form-name" value="contact" />
+
               <div className="row">
                 <div className="col-md-6">
                   <div className="md-form mb-0">
