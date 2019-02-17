@@ -11,6 +11,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/static/img/upload`,
+        name: 'uploads',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/img/`,
         name: 'img',
       },
@@ -32,7 +39,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 750,
+              maxWidth: 1200,
               linkImagesToOriginal: false,
               wrapperStyle: 'margin-bottom: 1.0725rem;',
             },

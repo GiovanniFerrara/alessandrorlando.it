@@ -7,6 +7,7 @@ import commons from '../../../content/pages/commons.yaml'
 import BackButton from '../../components/BackButton'
 
 const GalleryTemplate = props => {
+  console.log(props)
   return (
     <Layout page={props.data.markdownRemark.fields.location}>
       <FullWidthBackground

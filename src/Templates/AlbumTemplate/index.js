@@ -8,6 +8,7 @@ import BackButton from '../../components/BackButton'
 import SongList from '../../components/SongList'
 import Lyrics from '../../components/Lyrics'
 import AlbumInfo from '../../components/AlbumInfo'
+import Img from 'gatsby-image'
 
 class AlbumTemplate extends Component {
   constructor(props) {
@@ -85,13 +86,25 @@ export const queryGallery = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
-        cover
+        cover {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              src
+            }
+          }
+        }
         title
         songs {
           titleSong
           text
           link
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1000) {
+                src
+              }
+            }
+          }
         }
       }
       fields {

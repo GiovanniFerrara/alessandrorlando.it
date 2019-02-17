@@ -1,13 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PhotographySub from '../../../components/PhotographySub'
-
-const Component = PhotographySub()
+import Img from 'gatsby-image'
 
 const Index = ({ data }) => {
   return (
     <div>
-      <Component data={data} />
+      <PhotographySub data={data} />
     </div>
   )
 }
@@ -23,7 +22,13 @@ export const pagequery = graphql`
         node {
           frontmatter {
             title
-            cover
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  src
+                }
+              }
+            }
             category
           }
           fields {

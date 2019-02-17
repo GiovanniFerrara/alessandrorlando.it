@@ -34,9 +34,7 @@ const ContactForm = () => {
                       name="name"
                       className="form-control"
                     />
-                    <label for="name" className="">
-                      {contact.name}
-                    </label>
+                    <label className="">{contact.name}</label>
                   </div>
                 </div>
 
@@ -48,9 +46,7 @@ const ContactForm = () => {
                       name="email"
                       className="form-control"
                     />
-                    <label for="email" className="">
-                      {contact.email}
-                    </label>
+                    <label className="">{contact.email}</label>
                   </div>
                 </div>
               </div>
@@ -64,9 +60,7 @@ const ContactForm = () => {
                       name="subject"
                       className="form-control"
                     />
-                    <label for="subject" className="">
-                      {contact.subject}
-                    </label>
+                    <label className="">{contact.subject}</label>
                   </div>
                 </div>
               </div>
@@ -81,7 +75,7 @@ const ContactForm = () => {
                       rows="5"
                       className="form-control md-textarea"
                     />
-                    <label for="message">{contact.message}</label>
+                    <label>{contact.message}</label>
                   </div>
                 </div>
               </div>

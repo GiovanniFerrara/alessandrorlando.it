@@ -4,6 +4,8 @@ import FullWidthBackground from '../../components/FullWidthBackground'
 import commons from '../../../content/pages/commons.yaml'
 import Gallery from '../../components/Gallery'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 const Index = ({ data }) => {
   return (
     <div>
@@ -30,7 +32,13 @@ export const pagequery = graphql`
         node {
           frontmatter {
             title
-            cover
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  src
+                }
+              }
+            }
           }
           fields {
             location
