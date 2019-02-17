@@ -7,7 +7,7 @@ const SongList = ({ song, songSelect }) => {
   return (
     <div className="lyrics__wrapper">
       <div className="lyrics__title">
-        <h5> {song.title} </h5>
+        <h5> {song.titleSong} </h5>
       </div>
       <LyricBody text={song.text} />
     </div>

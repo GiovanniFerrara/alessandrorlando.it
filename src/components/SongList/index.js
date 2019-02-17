@@ -13,7 +13,7 @@ const SongList = ({ songs, songSelect, handleSongClick, title }) => {
           <SingleSong
             key={'song' + i}
             id={i}
-            title={song.title}
+            title={song.titleSong}
             songSelect={songSelect}
             handleSongClick={handleSongClick}
           />
