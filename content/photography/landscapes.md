@@ -4,7 +4,6 @@ cover: /img/upload/5.-garden.jpg
 category: infront
 layout: photography
 ---
-
 ![img2](/img/upload/back1.jpg 'luuuuuuuuuuuuuuuuullllll')
 
 ![img2](/img/upload/home.jpg 'img2')
