@@ -95,7 +95,7 @@ collections:
     folder: content/music/
     slug: "{{slug}}"
     editor: 
-      preview: false 
+      preview: true 
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -106,7 +106,7 @@ collections:
         widget: list
         allow_add: true
         fields: 
-          - {label: "title", name: "title", widget: "string"}
+          - {label: "title", name: "titleSong", widget: "string"}
           - {label: "link", name: "link", widget: "string"}
           - {label: "text", name: "text", widget: "markdown"}
           - {label: "image", name: "image", widget: "image", required: false}

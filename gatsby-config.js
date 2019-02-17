@@ -11,21 +11,24 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/`,
-        name: 'images',
+        path: `${__dirname}/src/img/`,
+        name: 'img',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/img/`,
-        name: 'img',
+        path: `${__dirname}/content/`,
+        name: 'content',
       },
     },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -85,12 +88,6 @@ module.exports = {
         mergeCachingHeaders: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
@@ -105,5 +102,11 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
     'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
   ],
 }

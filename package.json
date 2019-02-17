@@ -24,6 +24,7 @@
     "gatsby-remark-copy-linked-files": "2.0.9",
     "gatsby-remark-images": "3.0.3",
     "gatsby-remark-prismjs": "3.2.4",
+    "gatsby-remark-relative-images": "^0.2.1",
     "gatsby-remark-responsive-iframe": "2.0.9",
     "gatsby-remark-smartypants": "2.0.8",
     "gatsby-source-filesystem": "2.0.20",
@@ -35,7 +36,8 @@
     "popper.js": "^1.14.7",
     "react-emotion": "^10.0.0",
     "react-icons": "^3.3.0",
-    "react-media": "^1.9.2"
+    "react-media": "^1.9.2",
+    "uglifyjs-webpack-plugin": "^2.1.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.14",

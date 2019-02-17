@@ -1,4 +1,4 @@
-// import CMS from 'netlify-cms'
-// import AlbumTemplatePreview from "./templatePreview/AlbumTemplatePreview";
+import CMS from 'netlify-cms'
+import AlbumTemplatePreview from './templatePreview/AlbumTemplatePreview'
 
-// CMS.registerPreviewTemplate("music", AlbumTemplatePreview);
+CMS.registerPreviewTemplate('music', AlbumTemplatePreview)

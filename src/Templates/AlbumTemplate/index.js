@@ -24,6 +24,8 @@ class AlbumTemplate extends Component {
   }
   render() {
     const props = this.props
+    console.log(props)
+
     return (
       <Layout
         page={
@@ -86,7 +88,7 @@ export const queryGallery = graphql`
         cover
         title
         songs {
-          title
+          titleSong
           text
           link
           image

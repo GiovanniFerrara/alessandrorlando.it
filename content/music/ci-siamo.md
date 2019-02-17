@@ -5,6 +5,5 @@ layout: music
 songs:
   - link: 'https://open.spotify.com/embed/track/3o4gY5F6pynTdDYTZmfxhZ'
     text: Beddra sta bicichetta
-    title: bella bicicletta
+    titleSong: bella bicicletta
 ---
-
