@@ -1,6 +1,6 @@
 ---
 title: Landscapes
-cover: /img/upload/back2.jpeg
+cover: /img/upload/5.-garden.jpg
 category: infront
 layout: photography
 ---
