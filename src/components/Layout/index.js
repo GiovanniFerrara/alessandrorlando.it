@@ -35,30 +35,33 @@ class Layout extends React.Component {
     this.setState(() => ({
       classDom: 'visible',
     }))
-
-    window.cookieconsent.initialise({
-      palette: {
-        popup: {
-          background: '#252e39',
+    try {
+      window.cookieconsent.initialise({
+        palette: {
+          popup: {
+            background: '#252e39',
+          },
+          button: {
+            background: '#2b6bac',
+          },
         },
-        button: {
-          background: '#2b6bac',
+        revokable: true,
+        onStatusChange: this.handleAcceptCookies,
+        theme: 'classic',
+        type: 'opt-in',
+        content: {
+          message:
+            "Questo sito utilizza i cookies per garantirti un'esperienza di navigazione migliore.",
+          dismiss: 'Ok!',
+          deny: 'Rifiuta i cookies',
+          link: 'Scopri di più',
         },
-      },
-      revokable: true,
-      onStatusChange: this.handleAcceptCookies,
-      theme: 'classic',
-      type: 'opt-in',
-      content: {
-        message:
-          "Questo sito utilizza i cookies per garantirti un'esperienza di navigazione migliore.",
-        dismiss: 'Ok!',
-        deny: 'Rifiuta i cookies',
-        link: 'Scopri di più',
-      },
-    })
-    if (document.cookie == 'cookieconsent_status=allow') {
-      this.handleAcceptCookies('allow')
+      })
+      if (document.cookie == 'cookieconsent_status=allow') {
+        this.handleAcceptCookies('allow')
+      }
+    } catch (e) {
+      console.log(e)
     }
   }
   render() {
