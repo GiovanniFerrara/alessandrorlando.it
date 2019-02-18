@@ -52,6 +52,25 @@ collections:
       fields:
         - {label: "Behind Cover Picture", name: "behind", widget: "image"}
         - {label: "In Front Cover Picture", name: "infront", widget: "image"}
+    - file: "content/pages/contact.yaml"
+      create: false
+      editor: 
+        preview: false 
+      name: contact
+      label: Contact page
+      delete: false
+      fields:
+        - {label: "Titolo della pagina", name: "title", required: false, widget: "string"}
+        - {label: "Sottotitolo", name: "subtitle", required: false, widget: "string"}
+        - {label: "La tua email", name: "email", required: false, widget: "string"}
+        - {label: "Oggetto email", name: "subject", required: false, widget: "string"}
+        - {label: "Il tuo Messaggio", name: "message", required: false, widget: "string"}
+        - {label: "Il tuo nome", name: "name", required: false, widget: "string"}
+        - {label: "La mia email", name: "myEmail", required: false, widget: "string"}
+        - {label: "Il mio numero di telefono", name: "myTelephone", required: false, widget: "string"}
+        - {label: "Bottone invia", name: "send", required: false, widget: "string"}
+        - {label: "Frase sopra il telefono", name: "something", required: false, widget: "string"}
+        
     - file: "content/pages/concertsevents.md"
       create: false
       editor: 

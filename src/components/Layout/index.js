@@ -36,32 +36,30 @@ class Layout extends React.Component {
       classDom: 'visible',
     }))
 
-    setTimeout(() => {
-      window.cookieconsent.initialise({
-        palette: {
-          popup: {
-            background: '#252e39',
-          },
-          button: {
-            background: '#2b6bac',
-          },
+    window.cookieconsent.initialise({
+      palette: {
+        popup: {
+          background: '#252e39',
         },
-        revokable: true,
-        onStatusChange: this.handleAcceptCookies,
-        theme: 'classic',
-        type: 'opt-in',
-        content: {
-          message:
-            "Questo sito utilizza i cookies per garantirti un'esperienza di navigazione migliore.",
-          dismiss: 'Ok!',
-          deny: 'Rifiuta i cookies',
-          link: 'Scopri di più',
+        button: {
+          background: '#2b6bac',
         },
-      })
-      if (document.cookie == 'cookieconsent_status=allow') {
-        this.handleAcceptCookies('allow')
-      }
-    }, 3000)
+      },
+      revokable: true,
+      onStatusChange: this.handleAcceptCookies,
+      theme: 'classic',
+      type: 'opt-in',
+      content: {
+        message:
+          "Questo sito utilizza i cookies per garantirti un'esperienza di navigazione migliore.",
+        dismiss: 'Ok!',
+        deny: 'Rifiuta i cookies',
+        link: 'Scopri di più',
+      },
+    })
+    if (document.cookie == 'cookieconsent_status=allow') {
+      this.handleAcceptCookies('allow')
+    }
   }
   render() {
     const children = React.Children.map(this.props.children, (child, index) => {
