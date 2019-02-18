@@ -1,70 +1,70 @@
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .navbar li {
     padding-top: 7px;
     padding-bottom: 7px;
     text-align: center;
-  }  
-  .navbar .active{
+  }
+  .navbar .active {
     margin: 0 62px;
   }
 }
-@media screen and (min-width: 992px){
-  #mainNav{
+@media screen and (min-width: 992px) {
+  #mainNav {
     margin-top: 30px;
   }
   .navbar li {
-        margin-left : 1em;
-        margin-right : 0.4em;
-  }  
+    margin-left: 1em;
+    margin-right: 0.4em;
+  }
 }
 
-#mainNav button:focus{
-  outline-color: rgba($color: #333, $alpha: 0)
+#mainNav button:focus {
+  outline-color: rgba($color: #333, $alpha: 0);
 }
-.navbar li a{
-color: #333;
-font-weight: 500
-}  
-.navbar-bg-color{
-  background: #ddd
+.navbar li a {
+  color: #333;
+  font-weight: 500;
+}
+.navbar-bg-color {
+  background: #ddd;
 }
 
-#navbarResponsive{
+#navbarResponsive {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.navbar-toggler{
+.navbar-toggler {
   background-color: #cbcbcb;
   position: relative;
   border-radius: 14px;
 }
-.nav-link{
+.nav-link {
   text-transform: uppercase;
 }
 
-.navbar .active{
+.navbar .active {
   background: #ccc;
   border-radius: 15px;
 }
-.navbar .nav-item:hover{
+.navbar .nav-item:hover {
   background: #bbb;
   border-radius: 15px;
 }
 
-.navbar-line{
-  height:2px;
+.navbar-line {
+  height: 2px;
   width: 35px;
-  background-color: #999; 
+  background-color: #999;
   border-radius: 2px;
   position: absolute;
   left: 10px;
 }
-.nl1{
-  top:10px;
+.nl1 {
+  top: 10px;
 }
-.nl2{
-  top:18px;
+.nl2 {
+  top: 18px;
 }
-.nl3{
-  top:26px;
+.nl3 {
+  top: 26px;
 }

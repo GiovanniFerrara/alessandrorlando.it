@@ -1,4 +1,4 @@
-.song-list__wrapper{
+.song-list__wrapper {
   display: flex;
   flex: 1 1 300px;
   flex-wrap: wrap;
@@ -10,7 +10,7 @@
   border: 0.7px solid #aaa;
   margin-bottom: 0;
 }
-.song-list__title{
+.song-list__title {
   display: flex;
   flex: 0 1 90px;
   justify-content: center;
@@ -19,14 +19,14 @@
   border-bottom: 0.7px solid #aaa;
   // height: 80px;
 }
-.song-list__title h2{
+.song-list__title h2 {
   margin: auto;
   // flex: 0 1 50px
 }
-.active{
+.active {
   font-weight: 700;
   transform: scale(1.07);
 }
-.song-list__wrapper .single-song:hover{
-  transform: scale(1.07)
+.song-list__wrapper .single-song:hover {
+  transform: scale(1.07);
 }

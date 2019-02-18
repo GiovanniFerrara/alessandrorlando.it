@@ -1,16 +1,21 @@
-.back__button{
+.back__button {
   position: fixed;
   cursor: pointer;
   top: 110px;
   left: 20px;
   z-index: 10;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  padding: 10px 5px;
+  background: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 992px){
-  .back__button{
+@media screen and (max-width: 992px) {
+  .back__button {
     position: fixed;
-    top: 85px;
-    left: 20px;
+    top: 60px;
+    left: auto;
+    right: 18px;
     z-index: 10;
   }
 }

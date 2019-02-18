@@ -1,21 +1,21 @@
-.behind-front__wrapper{
+.behind-front__wrapper {
   display: flex;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.behind-front__wrapper{
+.behind-front__wrapper {
   flex: 1 1 700px;
-  padding: 10px
+  padding: 10px;
 }
-.behind-front__img{
+.behind-front__img {
   width: 100%;
   object-fit: cover;
   height: 460px;
 }
 
-@media screen and (max-width: 992px){
-  .behind-front__img{
+@media screen and (max-width: 992px) {
+  .behind-front__img {
     height: 300px;
   }
 }

@@ -12,7 +12,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/img/upload`,
-        name: 'uploads',
+        name: 'assets',
       },
     },
     {
@@ -27,6 +27,20 @@ module.exports = {
       options: {
         path: `${__dirname}/content/`,
         name: 'content',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/music`,
+        name: 'music',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/photography`,
+        name: 'photography',
       },
     },
     {

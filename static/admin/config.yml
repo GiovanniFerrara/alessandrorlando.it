@@ -73,7 +73,10 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Cover Picture", name: "cover", widget: "image"}
-      - {label: "Category lowercase or minuscolo, one of (infront - behind)", name: "category", widget: "string"}
+      - label: Category
+        name : category
+        widget: inline-select
+        options: ['behind', 'infront']
       - {label: "Layout", name: "layout", widget: "hidden", default: "photography"}
       - label: Pictures
         name: pictures
@@ -92,7 +95,10 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Link for embedded videos", name: "link", widget: "string"}
-      - {label: "Category lowercase or minuscolo, one of (home - stage - clip)", name: "category", widget: "string"}
+      - label: Category
+        name : category
+        widget: inline-select
+        options: ['stage', 'home','clip']
       - {label: "Description", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "video"}
 

@@ -6,6 +6,7 @@ import Gallery from '../Gallery'
 import BackButton from '../BackButton'
 
 const PhotographySub = ({ data }) => {
+  console.log(data)
   return (
     <div>
       <Layout page="photography">

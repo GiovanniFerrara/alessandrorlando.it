@@ -1,4 +1,4 @@
-.lyrics__wrapper{
+.lyrics__wrapper {
   display: flex;
   flex: 1 1 300px;
   justify-content: flex-start;
@@ -8,12 +8,12 @@
   border: 0.7px solid #aaa;
   padding-bottom: 20px;
 }
-.lyrics__wrapper .single-song{
+.lyrics__wrapper .single-song {
   font-weight: 700;
   font-size: 17px;
 }
 
-.lyrics__title{
+.lyrics__title {
   display: flex;
   flex: 0 1 90px;
   justify-content: center;
@@ -23,7 +23,7 @@
   // height: 80px;
 }
 
-.lyrics__title h5{
+.lyrics__title h5 {
   margin: auto;
   // flex: 0 1 50px
 }

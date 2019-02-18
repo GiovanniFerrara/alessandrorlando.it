@@ -1,0 +1,71 @@
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(20, 20, 20, 0.4) !important;
+  outline: none;
+  z-index: 10;
+  bottom: 20px;
+
+}
+.modal-gallery__img{
+  object-fit: contain;
+  margin-bottom: 0;
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  top: 0px !important;
+  border: 0px solid trasparent !important;
+  outline: none;
+}
+
+.modalPort {
+  position: relative;
+  opacity: 1;
+  border: 0px solid trasparent !important;
+  outline: none;
+  z-index: 100;
+  height: 500px;
+}
+.modal-gallery__description {
+  bottom: 0;
+  top: auto;
+  right: auto;
+  position: absolute;
+  font-size: 18px;
+}
+[aria-label=Modal] {
+  width: 900px;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  background: #000;
+  border: 0px solid rgba(255, 255, 255, 0) !important;
+  box-shadow: 10px 28px 92px -41px #2b323c;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+@media screen and (max-width: 992) {
+  [aria-label=Modal] {
+    width: 700px;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    padding: 0;
+    background: #000;
+    border: 0px solid rgba(255, 255, 255, 0) !important;
+    box-shadow: 10px 28px 92px -41px #2b6bac;
+  }
+}
+.ReactModal__Body--open {
+  overflow: hidden;
+}

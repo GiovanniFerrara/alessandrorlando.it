@@ -10,6 +10,7 @@ const Index = ({ data }) => {
     </div>
   )
 }
+
 export default Index
 
 export const pagequery = graphql`
