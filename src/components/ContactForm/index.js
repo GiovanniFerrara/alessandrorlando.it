@@ -80,7 +80,7 @@ const ContactForm = () => {
                 </div>
               </div>
               <div className="text-center text-md-left">
-                <button className="btn btn-dark">Send</button>
+                <button className="button__contact-form">{contact.send}</button>
               </div>
             </form>
 

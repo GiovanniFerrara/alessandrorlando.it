@@ -3,3 +3,16 @@
   align-content: center;
   justify-content: center;
 }
+
+.button__contact-form{
+  background: rgba($color: #000, $alpha: 0.6);
+  cursor: pointer;
+  color: #fff;
+  border: 0 solid;
+  padding: 5px 80px;
+  font-weight: 500;
+}
+
+.button__contact-form:hover{
+  background: rgba($color: #000, $alpha: 1);
+}
