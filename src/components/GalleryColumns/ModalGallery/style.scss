@@ -7,9 +7,8 @@
   outline: none;
   z-index: 10;
   bottom: 20px;
-
 }
-.modal-gallery__img{
+.modal-gallery__img {
   object-fit: contain;
   margin-bottom: 0;
 }
@@ -35,7 +34,7 @@
   position: absolute;
   font-size: 18px;
 }
-[aria-label=Modal] {
+[aria-label='Modal'] {
   width: 900px;
   max-width: 80%;
   display: flex;
@@ -53,7 +52,7 @@
 }
 
 @media screen and (max-width: 992) {
-  [aria-label=Modal] {
+  [aria-label='Modal'] {
     width: 700px;
     max-width: 85%;
     display: flex;
