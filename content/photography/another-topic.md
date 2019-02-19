@@ -1,5 +1,5 @@
 ---
-title: Another topic
+title: Random Places
 cover: /img/upload/home2.jpg
 category: infront
 layout: photography
