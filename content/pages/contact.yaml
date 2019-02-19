@@ -1,5 +1,5 @@
 title: Contatti
-subtitle: sottotitolo 
+subtitle: ''
 email: La tua email
 subject: Oggetto dell'email
 message: Il tuo messaggio
@@ -7,4 +7,4 @@ name: Il tuo nome
 myEmail: ilsognodiprometeo@yahoo.com
 myTelephone: + 39 329 35 97 413
 send: Invia
-something: Bla bla bla bla bla
+something: ''
