@@ -8,6 +8,7 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    `gatsby-plugin-netlify-cms-paths`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -47,9 +48,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          {
-            resolve: `gatsby-remark-relative-images`,
-          },
+          `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: 'gatsby-remark-images',
             options: {
