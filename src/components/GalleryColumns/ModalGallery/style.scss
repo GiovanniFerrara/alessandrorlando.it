@@ -64,6 +64,14 @@
     border: 0px solid rgba(255, 255, 255, 0) !important;
     box-shadow: 10px 28px 92px -41px #2b6bac;
   }
+  .modalPort {
+    position: relative;
+    opacity: 1;
+    border: 0px solid trasparent !important;
+    outline: none;
+    z-index: 100;
+    height: 300px;
+  }
 }
 .ReactModal__Body--open {
   overflow: hidden;
