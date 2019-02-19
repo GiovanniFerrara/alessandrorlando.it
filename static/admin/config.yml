@@ -98,7 +98,7 @@ collections:
         options: ['behind', 'infront']
       - {label: "Layout", name: "layout", widget: "hidden", default: "photography"}
       - label: Pictures
-        name: pictures
+        name: pics
         widget: list
         fields: 
           - {label: "Description", name: "description", widget: "string"}
