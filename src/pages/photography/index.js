@@ -12,6 +12,7 @@ const behind = {
   title: 'behind',
   alt: 'behind',
   href: 'behind',
+  description: 'Behind the scenes',
 }
 const infront = {
   key: photography.infront,
@@ -19,6 +20,7 @@ const infront = {
   title: 'infront',
   alt: 'infront',
   href: 'infront',
+  description: 'In front the scenes',
 }
 
 const Index = () => {
@@ -29,7 +31,9 @@ const Index = () => {
           srcMobile={commons.backgroundMobile}
           srcDesktop={commons.backgroundDesktop}
         >
-          <BehindInfront array={[behind, infront]} />
+          <div className="container">
+            <BehindInfront array={[behind, infront]} />
+          </div>
         </FullWidthBackground>
       </Layout>
     </div>

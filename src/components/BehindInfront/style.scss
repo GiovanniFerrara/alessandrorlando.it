@@ -1,21 +1,23 @@
 .behind-front__wrapper {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .behind-front__wrapper {
-  flex: 1 1 700px;
-  padding: 10px;
+	flex: 1 1 442px;
+	padding: 10px;
 }
 .behind-front__img {
-  width: 100%;
-  object-fit: cover;
-  height: 460px;
+	width: 100%;
+	object-fit: cover;
+	height: 460px;
 }
-
+.behind-front__caption{
+	font-size: 20px;
+}
 @media screen and (max-width: 992px) {
-  .behind-front__img {
-    height: 300px;
-  }
+	.behind-front__img {
+		height: 300px;
+	}
 }

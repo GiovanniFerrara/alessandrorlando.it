@@ -1,37 +1,37 @@
 .full-width-background {
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center center;
-  padding-top: 150px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  transition: opacity 0.2s ease;
-  opacity: 1;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center center;
+	padding-top: 150px;
+	display: flex;
+	// align-content: center;
+	justify-content: center;
+	transition: opacity 0.2s ease;
+	opacity: 1;
 }
 .invisible {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 .visible {
-  opacity: 1;
+	opacity: 1;
 }
 
 @media screen and (max-width: 992px) {
-  .full-width-background {
-    padding-top: 80px;
-    background-repeat: repeat-y;
-    background-size: contain;
-    background-attachment: scroll;
-    background-position: top center;
-  }
+	.full-width-background {
+		padding-top: 80px;
+		background-repeat: repeat-y;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position: top center;
+	}
 }
 
 .full-width-background__home {
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center center;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center center;
 }

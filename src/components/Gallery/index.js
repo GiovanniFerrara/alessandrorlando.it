@@ -13,7 +13,7 @@ const Gallery = ({
   page = '',
 }) => {
   return (
-    <div className="gallery__wrapper">
+    <div className="gallery__wrapper container">
       {array.map(item => {
         return (
           <Image

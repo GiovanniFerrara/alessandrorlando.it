@@ -13,6 +13,7 @@ const BehindInfront = ({ array }) => {
             title={item.title}
             alt={item.alt}
             href={item.href}
+            description={item.description}
           />
         )
       })}

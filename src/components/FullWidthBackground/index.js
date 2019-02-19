@@ -11,14 +11,26 @@ const FullWidthBackground = ({
 }) => {
   return (
     <div>
-      <div
-        className={`full-width-background ${classDom} ${classHomepage}`}
-        style={{
-          backgroundImage: `url(${srcDesktop})`,
-        }}
-      >
-        {children}
-      </div>
+      <Media query="(max-width: 900px)">
+        <div
+          className={`full-width-background ${classDom} ${classHomepage}`}
+          style={{
+            backgroundImage: `url(${srcMobile})`,
+          }}
+        >
+          {children}
+        </div>
+      </Media>
+      <Media query="(min-width: 901px)">
+        <div
+          className={`full-width-background ${classDom} ${classHomepage}`}
+          style={{
+            backgroundImage: `url(${srcDesktop})`,
+          }}
+        >
+          {children}
+        </div>
+      </Media>
     </div>
   )
 }
