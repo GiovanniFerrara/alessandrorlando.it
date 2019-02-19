@@ -1,7 +1,7 @@
 ---
-title: Home style
+title: Concerts
 cover: /img/upload/15844090_1800737073515466_1672379029512090858_o.jpg
-category: behind
+category: infront
 layout: photography
 pics:
   - description: Foto di Orlando
