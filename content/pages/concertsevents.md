@@ -1,41 +1,16 @@
 ---
 title: some title
 ---
-# Flentem anilia nam obstantia
+# Ciappeddre festival 2019
 
 ![](/img/upload/p2850126.jpg)
 
-## Tua nec cesserunt parvus nata
+**A Capodanno** per il Cosmo Festival le discoteche Spazio Novecento - Room 26 - Salone delle Fontane presentano uno dei più grandi eventi di electronic music d'italia! La Festa creata dall'unione di tre location leader nell' intrattenimento di Roma che con un solo biglietto, consente di spostarsi liberamente nelle sale dei 3 discoteche e di scatenarsi fino al mattino con la miglior musica elettronica dell'anno; ospiteranno non solo una delle feste più in voga di tutta italia come il Capodanno Cosmo Festival, che anche quest'anno conferma Line Up formidabile, ma proprio un nuovo modo di concepire un festival qui nella capitale.
 
-Lorem markdownum ut admovit atque in fatebor vicit inque producit in omnes solo
-Minyae formas. Fraterque sine. [Templa silvarum
-poplite](http://www.fetusdolor.io/amictuspopuli), imperet scelus volucris ictu,
-**non non** inde infixum caelo ventis proelia maerens. Praecipiunt **et** victor
-abstulit; possumus haerenti undis inque. Recessu in audet Acheloia sollicitat
-caros odiumque, detractare aut nullumque Thebas tandem duram.
+Spazio 900 sarà sede della line up di musica elettro di primo piano, forse la più imponente d'italia proprio nella notte del Capodanno Cosmo Festival, idolatrato dai ogni clubbers d'Europa che da anni si muovono verso Roma per ascoltare tutti i djs proposti da Cosmo.
 
-## Alasque ille docendam praedam mansura
+Room 26 sarà la seconda discoteca principale del Cosmo Festival dove si succederanno moltissimi artisti House di fama mondiale all'interno delle due sale dalla stessa discoteca.
 
-Incanduit limus. Accingere at non formam seges plausus caeloque.
+Salone delle Fontane con musica un pò più Tecno il suo mood eccezionale sarà lo sfondo giusto per un fine anno esaltante all'interno di uno degli edifici che rappresenta la storia del quartiere dell'Eur.
 
-## Rubor et nuc
-
-In peregit data vidit servat posset bello, expalluit spinae saepe. Formosus
-proditione illa; deus _est_: similem **harundine tuque**, concipit illa
-gravitate euntis Argolicas sola saetiger.
-
-## Telae vulnera
-
-[Illo tempus crimen](http://futuri.io/aquae-caelique) Ismariae et patre
-poscuntque eodem spumantiaque cinxisse? Sinistro foret quam prodierat tene
-sidus, **maciem simul aut**. A ingreditur, valvis, indicium At omnia fulmina
-fatus refert; omnia quondam dotabere Phaestiadas elige sumptas?
-
-## Quod dum fuerunt ut nihil ab nisi
-
-Telum navis plurima longi proximitas tabe incompta errat nocuisse retinete.
-Generis et rupes aquarum verbaque natura.
-
-Iam quamvis partim dixit domum Ceycis; cum setae, ostendi? Unde consilii? Vicem
-ubi _sui nimium_ sanguine quodque. Amuli eundem et licet praeter producet ut
-suos ceram quidem et secum enim pariter tenetur **pecoris**, naturae?
+Cosmo Festival 2019 è sicuramente il party della musica elettronica più variegato sia per le tipologie degli ambienti che l'ospiteranno che per i mash-up che veranno eseguiti nella serata; molti saranno i dj che, durante il party, daranno sfogo alla fantasia per creare combinazioni inedite che renderanno il Capodanno allo Spazio 900 un viaggio di fine anno lungo una notte.
